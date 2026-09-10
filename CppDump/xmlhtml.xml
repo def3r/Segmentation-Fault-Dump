@@ -1,0 +1,32 @@
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" version="2.0">
+<channel>
+<title>daniel.haxx.se</title>
+<atom:link href="https://daniel.haxx.se/blog/feed/" rel="self" type="application/rss+xml"/>
+<link>https://daniel.haxx.se/blog</link>
+<description>curl, open source and networking</description>
+<lastBuildDate>Wed, 02 Sep 2026 20:33:14 +0000</lastBuildDate>
+<language>en-US</language>
+<sy:updatePeriod> hourly </sy:updatePeriod>
+<sy:updateFrequency> 1 </sy:updateFrequency>
+<generator>https://wordpress.org/?v=7.1</generator>
+<image>
+<url>https://daniel.haxx.se/blog/wp-content/uploads/2024/07/daniel-greenbg-blackandwhite-413x413-1.jpg</url>
+<title>daniel.haxx.se</title>
+<link>https://daniel.haxx.se/blog</link>
+<width>32</width>
+<height>32</height>
+</image>
+<item>
+<title>curl 8.22.0</title>
+<link>https://daniel.haxx.se/blog/2026/09/02/curl-8-22-0/</link>
+<comments>https://daniel.haxx.se/blog/2026/09/02/curl-8-22-0/#respond</comments>
+<pubDate>Wed, 02 Sep 2026 05:52:46 +0000</pubDate>
+<guid isPermaLink="false">https://daniel.haxx.se/blog/?p=30615</guid>
+<content:encoded>
+<![CDATA[ <p class="wp-block-paragraph">Welcome to this new release. Get it as always from <a href="https://curl.se">https://curl.se</a>.</p> <p class="wp-block-paragraph">If you rather want a security-patched older release branch, stay tuned for the follow-up <a href="https://rock-solid.curl.dev/">Rock-solid curl</a> announcement within a few days.</p> <h2 class="wp-block-heading">Release presentation</h2> <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper"> <iframe title="curl 8.22.0 with Daniel Stenberg" width="474" height="267" src="https://www.youtube.com/embed/Iz4x-jMcmWo?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div></figure> <h2 class="wp-block-heading">Numbers</h2> <p class="has-text-align-center wp-block-paragraph">the 276th release<br>6 changes<br>70 days (total: 10,887)<br>302 bugfixes (total: 14,489)<br>525 commits (total: 39,608)<br>0 new public libcurl function (total: 100)<br>4 new curl_easy_setopt() option (total: 312)<br>4 new curl command line option (total: 278)<br>85 contributors, 55 new (total: 3,786)<br>43 authors, 29 new (total: 1,518)<br>9 security fixes (total: 215)</p> <h2 class="wp-block-heading">Security</h2> <p class="wp-block-paragraph">Associated with this release, we publish ten new CVEs. Nine of them are for curl and libcurl, and one is for wcurl.</p> <ul class="wp-block-list"> <li><a href="https://curl.se/docs/CVE-2026-13608.html">CVE-2026-13608</a>: OpenLDAP SASL authentication bypass</li> <li><a href="https://curl.se/docs/CVE-2026-18924.html">CVE-2026-18924</a>: HTTP/2 server push UAF</li> <li><a href="https://curl.se/docs/CVE-2026-19931.html">CVE-2026-19931</a>: Negotiate ambient user conn reuse</li> <li><a href="https://curl.se/docs/CVE-2026-80229.html">CVE-2026-80229</a>: OpenSSL provider use-after-free</li> <li><a href="https://curl.se/docs/CVE-2026-80230.html">CVE-2026-80230</a>: OpenSSL pinning bypass</li> <li><a href="https://curl.se/docs/CVE-2026-80231.html">CVE-2026-80231</a>: native CA store conn reuse</li> <li><a href="https://curl.se/docs/CVE-2026-80255.html">CVE-2026-80255</a>: secure cookie attribute bypass with tab</li> <li><a href="https://curl.se/docs/CVE-2026-82208.html">CVE-2026-82208</a>: wolfSSL CA-cache hit overrides callback</li> <li><a href="https://curl.se/docs/CVE-2026-82209.html">CVE-2026-82209</a>: domain-scoped PSL domain cookie</li> </ul> <p class="wp-block-paragraph">The wcurl one:</p> <p class="wp-block-paragraph"><a href="https://curl.se/docs/CVE-2026-80256.html">CVE-2026-80256</a>: wcurl backslash bypass</p> <h2 class="wp-block-heading">Changes</h2> <ul class="wp-block-list"> <li>added support for Apple GSS Framework</li> <li>added API guards</li> <li>new RFC 9421 HTTP Message Signatures support (experimental)</li> <li>blocks NTLM fallback in SPNEGO negotiation</li> <li>dropped support for TLS-SRP</li> <li>added option to use Apple fast UDP</li> </ul> <h2 class="wp-block-heading">Coming removals</h2> <ul class="wp-block-list"> <li>HTTP/2 Server Push</li> <li>local crypto implementations</li> <li>NTLM</li> <li>SMB</li> </ul> <h2 class="wp-block-heading">Next</h2> <p class="wp-block-paragraph">We plan the next curl release to happen at the end of October unless there are some bad regressions reported against 8.22.0.</p> ]]>
+</content:encoded>
+<wfw:commentRss>https://daniel.haxx.se/blog/2026/09/02/curl-8-22-0/feed/</wfw:commentRss>
+<slash:comments>0</slash:comments>
+</item>
+</channel>
+</rss>
